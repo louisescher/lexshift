@@ -2,7 +2,7 @@ import type { Context } from "hono";
 import type { BlankEnv, BlankInput } from "hono/types";
 import { shift } from "lexshift";
 import z from "zod";
-import { exampleLexiconCandidates } from "@/util/exapleLexicons";
+import { exampleLexiconCandidates } from "@/util/exampleLexicons";
 
 const shiftRequestSchema = z.object({
 	record: z

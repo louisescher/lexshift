@@ -10,7 +10,7 @@ type ExampleLexiconCandidate = {
 
 function loadExampleLexiconCandidates(): ExampleLexiconCandidate[] {
 	const lexiconDir = fileURLToPath(
-		new URL("../../../example-lexicons", import.meta.url),
+		new URL("../../../../example-lexicons", import.meta.url),
 	);
 	const files = readdirSync(lexiconDir)
 		.filter((name) => name.endsWith(".json"))

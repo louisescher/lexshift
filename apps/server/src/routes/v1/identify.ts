@@ -2,7 +2,7 @@ import type { Context } from "hono";
 import type { BlankEnv, BlankInput } from "hono/types";
 import { identify } from "lexshift";
 import z from "zod";
-import { exampleLexiconCandidates } from "@/util/exapleLexicons";
+import { exampleLexiconCandidates } from "@/util/exampleLexicons";
 
 const identifyRequestSchema = z.object({
 	record: z
