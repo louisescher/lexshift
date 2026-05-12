@@ -1,6 +1,6 @@
 {
 	"name": "lexshift",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Identify and migrate AT Protocol records across lexicon revisions.",
 	"type": "module",
 	"main": "./dist/index.mjs",
