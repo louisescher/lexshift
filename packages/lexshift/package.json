@@ -28,7 +28,7 @@
 		"url": "git+https://github.com/louisescher/lexshift.git",
 		"directory": "packages/lexshift"
 	},
-	"homepage": "https://github.com/louisescher/lexshift/tree/main/packages/lexshift",
+	"homepage": "https://lexshift.lou.gg",
 	"bugs": {
 		"url": "https://github.com/louisescher/lexshift/issues"
 	},
