@@ -1,19 +1,19 @@
 {
-  "name": "@lexshift/env",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "exports": {
-    "./server": "./src/server.ts"
-  },
-  "dependencies": {
-    "@t3-oss/env-core": "^0.13.1",
-    "dotenv": "^17.2.2",
-    "zod": "^4.1.13"
-  },
-  "devDependencies": {
-    "@lexshift/config": "workspace:*",
-    "@types/node": "^22.15.21",
-    "typescript": "^5.9.3"
-  }
+	"name": "@lexshift/env",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./server": "./src/server.ts"
+	},
+	"dependencies": {
+		"@t3-oss/env-core": "^0.13.1",
+		"dotenv": "^17.2.2",
+		"zod": "^4.1.13"
+	},
+	"devDependencies": {
+		"@lexshift/config": "workspace:*",
+		"@types/node": "^22.15.21",
+		"typescript": "^5.9.3"
+	}
 }

@@ -1,0 +1,25 @@
+{
+	"defs": {
+		"main": {
+			"description": "An example schema to show off how lexshift allows for easy migrations.",
+			"key": "tid",
+			"record": {
+				"properties": {
+					"title": {
+						"description": "title name of record; can not be empty",
+						"maxGraphemes": 64,
+						"maxLength": 640,
+						"minLength": 1,
+						"type": "string"
+					}
+				},
+				"required": ["title"],
+				"type": "object"
+			},
+			"type": "record"
+		}
+	},
+	"id": "gg.lou.record",
+	"lexicon": 1,
+	"revision": 1
+}

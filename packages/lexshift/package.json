@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"exports": {
-		"./index": "./src/index.ts"
+		".": "./src/index.ts"
 	},
 	"dependencies": {
 		"@atproto/lex-resolver": "^0.0.23",
