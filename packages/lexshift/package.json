@@ -1,0 +1,16 @@
+{
+	"name": "lexshift",
+	"version": "0.0.1",
+	"type": "module",
+	"exports": {
+		"./index": "./src/index.ts"
+	},
+	"dependencies": {
+		"@atproto/lex-resolver": "^0.0.23",
+		"@atproto/lexicon": "^0.6.2"
+	},
+	"devDependencies": {
+		"tsdown": "^0.21.9",
+		"typescript": "^5.9.3"
+	}
+}

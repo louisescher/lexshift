@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.13.1",
-    "dotenv": "catalog:",
-    "zod": "catalog:"
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.13"
   },
   "devDependencies": {
     "@lexshift/config": "workspace:*",
-    "@types/bun": "catalog:",
-    "typescript": "catalog:"
+    "@types/node": "^22.15.21",
+    "typescript": "^5.9.3"
   }
 }

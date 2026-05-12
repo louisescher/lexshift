@@ -6,24 +6,24 @@
 // Showcase: https://www.better-t-stack.dev/showcase
 // Sponsor: https://github.com/sponsors/AmanVarshney01
 //
-// Add new addons with: bun create better-t-stack add
+// Add new addons with: pnpm dlx better-t-stack add
 // This file is safe to delete
 
 {
   "$schema": "https://r2.better-t-stack.dev/schema.json",
   "version": "3.28.2",
   "createdAt": "2026-05-11T23:00:24.648Z",
-  "reproducibleCommand": "bun create better-t-stack@latest lexshift --frontend none --backend hono --runtime bun --database none --orm none --api none --auth none --payments none --addons biome starlight turborepo --examples none --db-setup none --web-deploy none --server-deploy none --git --package-manager bun --install",
+  "reproducibleCommand": "pnpm dlx better-t-stack@latest lexshift --frontend none --backend hono --runtime node --database none --orm none --api none --auth none --payments none --addons biome starlight turborepo --examples none --db-setup none --web-deploy none --server-deploy none --git --package-manager pnpm --install",
   "database": "none",
   "orm": "none",
   "backend": "hono",
-  "runtime": "bun",
+  "runtime": "node",
   "frontend": [],
   "addons": ["biome", "starlight", "turborepo"],
   "examples": [],
   "auth": "none",
   "payments": "none",
-  "packageManager": "bun",
+  "packageManager": "pnpm",
   "dbSetup": "none",
   "api": "none",
   "webDeploy": "none",

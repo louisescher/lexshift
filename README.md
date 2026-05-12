@@ -6,7 +6,7 @@ This project was created with [Better-T-Stack](https://github.com/AmanVarshney01
 
 - **TypeScript** - For type safety and improved developer experience
 - **Hono** - Lightweight, performant server framework
-- **Bun** - Runtime environment
+- **Node.js** - Runtime environment
 - **Biome** - Linting and formatting
 - **Starlight** - Documentation site with Astro
 - **Turborepo** - Optimized monorepo build system
@@ -16,20 +16,20 @@ This project was created with [Better-T-Stack](https://github.com/AmanVarshney01
 First, install the dependencies:
 
 ```bash
-bun install
+pnpm install
 ```
 
 Then, run the development server:
 
 ```bash
-bun run dev
+pnpm dev
 ```
 
 The API is running at [http://localhost:3000](http://localhost:3000).
 
 ## Git Hooks and Formatting
 
-- Format and lint fix: `bun run check`
+- Format and lint fix: `pnpm check`
 
 ## Project Structure
 
@@ -43,10 +43,10 @@ lexshift/
 
 ## Available Scripts
 
-- `bun run dev`: Start all applications in development mode
-- `bun run build`: Build all applications
-- `bun run dev:server`: Start only the server
-- `bun run check-types`: Check TypeScript types across all apps
-- `bun run check`: Run Biome formatting and linting
-- `cd apps/docs && bun run dev`: Start documentation site
-- `cd apps/docs && bun run build`: Build documentation site
+- `pnpm dev`: Start all applications in development mode
+- `pnpm build`: Build all applications
+- `pnpm dev:server`: Start only the server
+- `pnpm check-types`: Check TypeScript types across all apps
+- `pnpm check`: Run Biome formatting and linting
+- `cd apps/docs && pnpm dev`: Start documentation site
+- `cd apps/docs && pnpm build`: Build documentation site
