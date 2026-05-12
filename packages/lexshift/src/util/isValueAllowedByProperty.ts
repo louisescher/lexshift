@@ -1,4 +1,4 @@
-import type { LexRecordProperty } from "@/types";
+import type { LexRecordProperty } from "../types";
 
 /**
  * Checks if a value is allowed by a property and its constraints.

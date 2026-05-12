@@ -1,0 +1,56 @@
+---
+title: Getting started
+description: Learn how to identify and shift AT Protocol records with Lexshift.
+---
+
+Lexshift helps you work with records whose lexicons change over time. Start with `identify` to find the revision a record matches, then use `shift` to migrate it to a target revision.
+
+## Install
+
+```bash
+npm install lexshift
+```
+
+## Identify a record
+
+```ts
+import { identify } from "lexshift";
+
+const record = {
+  $type: "com.example.profile",
+  name: "Ada",
+};
+
+const result = await identify(record, {
+  historyProvider: async ({ nsid, current }) => {
+    const history = await loadPreviousLexicons(nsid, current.revision);
+
+    return history.map((candidate) => ({
+      revision: candidate.revision,
+      lexicon: candidate.lexicon,
+      cid: candidate.cid,
+    }));
+  },
+});
+
+console.log(result.revision);
+```
+
+## Shift to a new revision
+
+```ts
+import { shift } from "lexshift";
+
+const migrated = await shift(record, 3, {
+  historyProvider: async ({ nsid, current }) => {
+    return loadPreviousLexicons(nsid, current.revision).map((candidate) => ({
+      revision: candidate.revision,
+      lexicon: candidate.lexicon,
+    }));
+  },
+});
+
+console.log(migrated.oldRevision, migrated.newRevision);
+```
+
+Use `historyProvider` when you want Lexshift to compare the current lexicon with earlier revisions. If the record already matches the current schema, `identify` returns immediately.

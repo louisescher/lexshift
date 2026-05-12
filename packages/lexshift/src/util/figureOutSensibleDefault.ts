@@ -1,4 +1,4 @@
-import type { LexRecordProperty } from "@/types";
+import type { LexRecordProperty } from "../types";
 
 /**
  * Tries to figure out a sensible default value based on the property's type.

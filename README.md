@@ -1,52 +1,19 @@
-# lexshift
+# Lexshift
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines Hono, and more.
+Lexshift is a toolkit for working with evolving AT Protocol lexicons. It helps you figure out which lexicon revision a record belongs to and migrate records between revisions when schemas change.
 
-## Features
+The project includes a reusable TypeScript library and an API-oriented workflow for integrating lexicon migration into apps and services. It focuses on practical schema evolution support: preserving compatible data, converting values when possible, and filling new fields with sensible defaults when needed.
 
-- **TypeScript** - For type safety and improved developer experience
-- **Hono** - Lightweight, performant server framework
-- **Node.js** - Runtime environment
-- **Biome** - Linting and formatting
-- **Starlight** - Documentation site with Astro
-- **Turborepo** - Optimized monorepo build system
+## What Lexshift does
 
-## Getting Started
+- **Identify revisions** by validating a record against the current lexicon and historical candidates.
+- **Shift records across revisions** in either direction (upgrade or downgrade).
+- **Handle schema drift** by detecting renamed, dropped, created, and type-changed fields.
+- **Preserve data safely** with compatibility checks and controlled value conversion.
 
-First, install the dependencies:
+## Development
 
 ```bash
 pnpm install
-```
-
-Then, run the development server:
-
-```bash
 pnpm dev
 ```
-
-The API is running at [http://localhost:3000](http://localhost:3000).
-
-## Git Hooks and Formatting
-
-- Format and lint fix: `pnpm check`
-
-## Project Structure
-
-```
-lexshift/
-├── apps/
-│   ├── docs/        # Documentation site (Astro Starlight)
-│   └── server/      # Backend API (Hono)
-├── packages/
-```
-
-## Available Scripts
-
-- `pnpm dev`: Start all applications in development mode
-- `pnpm build`: Build all applications
-- `pnpm dev:server`: Start only the server
-- `pnpm check-types`: Check TypeScript types across all apps
-- `pnpm check`: Run Biome formatting and linting
-- `cd apps/docs && pnpm dev`: Start documentation site
-- `cd apps/docs && pnpm build`: Build documentation site

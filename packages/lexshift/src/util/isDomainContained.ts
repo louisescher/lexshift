@@ -1,4 +1,4 @@
-import type { LexRecordProperty } from "@/types";
+import type { LexRecordProperty } from "../types";
 import { isValueAllowedByProperty } from "./isValueAllowedByProperty";
 
 /**

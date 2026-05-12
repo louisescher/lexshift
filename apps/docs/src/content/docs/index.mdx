@@ -1,39 +1,42 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Lexshift
+description: Identify and migrate AT Protocol records across lexicon revisions.
+template: splash
+video:
+  type: video
+  link: https://screen.studio/share/EnqCa4e1
+  duration: 144
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: Identify and migrate AT Protocol records across lexicon revisions.
   actions:
-    - text: Example Guide
+    - text: Get Started
       link: /guides/example/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Star on GitHub
+      link: https://github.com/louisescher/lexshift
+      icon: github
       variant: minimal
+
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+<video controls autoplay style="border-radius: 8px;">
+  <source src="/showcase.mp4" type="video/mp4" />
+
+  Download the
+  <a href="/showcase.mp4">MP4</a>
+  video.
+</video>
+
+
+## Explore Lexshift
 
 <CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
+  <Card title="Up and down" icon="document">
+  	Lexshift can convert a record from an older to a newer and from a newer to an older lexicon.
   </Card>
-  <Card title="Change page layout" icon="document">
-    Delete `template: splash` in `src/content/docs/index.mdx` to display a sidebar on this page.
-  </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
-  </Card>
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
-  </Card>
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  <Card title="Easy access functions" icon="list-format">
+    Lexshift exposes two funtions: `identify` and `shift`. Integrate them however you need.
   </Card>
 </CardGrid>

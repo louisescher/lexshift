@@ -11,7 +11,13 @@
 		"build": "turbo build",
 		"check-types": "turbo check-types",
 		"dev:server": "turbo -F server dev",
-		"check": "biome check --write ."
+		"check": "biome check --write .",
+		"changeset": "changeset",
+		"version-packages": "changeset version",
+		"release": "changeset publish",
+		"ci:prepublish": "pnpm build",
+		"ci:version": "pnpm changeset version",
+		"ci:publish": "pnpm changeset publish"
 	},
 	"dependencies": {
 		"@lexshift/env": "workspace:*",
@@ -20,6 +26,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.0",
+		"@changesets/cli": "^2.29.6",
 		"@lexshift/config": "workspace:*",
 		"@types/node": "^22.15.21",
 		"turbo": "^2.8.12",

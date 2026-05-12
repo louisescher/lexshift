@@ -1,9 +1,44 @@
 {
 	"name": "lexshift",
 	"version": "0.0.1",
+	"description": "Identify and migrate AT Protocol records across lexicon revisions.",
 	"type": "module",
+	"main": "./dist/index.mjs",
+	"types": "./dist/index.d.mts",
 	"exports": {
-		".": "./src/index.ts"
+		".": {
+			"types": "./dist/index.d.mts",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"sideEffects": false,
+	"keywords": [
+		"atproto",
+		"at protocol",
+		"lexicon",
+		"schema",
+		"migration"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/louisescher/lexshift.git",
+		"directory": "packages/lexshift"
+	},
+	"homepage": "https://github.com/louisescher/lexshift/tree/main/packages/lexshift",
+	"bugs": {
+		"url": "https://github.com/louisescher/lexshift/issues"
+	},
+	"scripts": {
+		"build": "tsdown",
+		"check-types": "tsc -b",
+		"prepack": "pnpm run build"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"dependencies": {
 		"@atproto/lex-resolver": "^0.0.23",
