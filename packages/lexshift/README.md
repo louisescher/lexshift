@@ -4,6 +4,8 @@
 
 It is designed for schema evolution workflows where records need to remain usable across multiple lexicon versions.
 
+Full documentation is available at [lexshift.lou.gg](https://lexshift.lou.gg).
+
 ## Installation
 
 ```bash

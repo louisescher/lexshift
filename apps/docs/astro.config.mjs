@@ -1,4 +1,6 @@
 // @ts-check
+
+import node from "@astrojs/node";
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 import starlightThemeRapide from "starlight-theme-rapide";
@@ -28,4 +30,8 @@ export default defineConfig({
 			plugins: [starlightThemeRapide()],
 		}),
 	],
+
+	adapter: node({
+		mode: "standalone",
+	}),
 });
